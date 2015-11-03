@@ -1,0 +1,2 @@
+# translate-ge
+Learn ruby..
