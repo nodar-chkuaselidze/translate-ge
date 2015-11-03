@@ -39,7 +39,7 @@
 				<key>runningsubtext</key>
 				<string>searching..</string>
 				<key>script</key>
-				<string>/usr/bin/ruby ./main.rb {query}</string>
+				<string>/usr/bin/ruby ./translate.rb {query}</string>
 				<key>subtext</key>
 				<string>English &lt;=&gt; ქართული</string>
 				<key>title</key>
