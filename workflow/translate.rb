@@ -1,9 +1,37 @@
 #!/usr/bin/ruby
 
 require 'rubygems' unless defined? Gem
-require 'bundle/bundler/setup'
-require './api'
+require 'bundler/setup'
+require 'alfred'
+require 'plist'
+require File.dirname(__FILE__) + '/api'
 
-api = TranslateGe.new
+class Translate < Alfred::Handler::Base
+  def initialize(alfred)
+    super
+    @alfred = alfred
+  end
 
-puts $0
+  def generate_feedback
+    #feedback.add_item({
+    #  uid: '0105069110201',
+    #  title: 'Nooooo',
+    #  subtitle: '....'
+    #})
+  end
+
+  def on_action(arg)
+    puts arg
+  end
+end
+
+Alfred.with_friendly_error do |alfred|
+  #api = TranslateGe.new
+  alfred.with_rescue_feedback = true
+
+  puts "!!!!"
+  puts alfred.methods
+end
+
+#puts $0
+#puts api.methods(false)
