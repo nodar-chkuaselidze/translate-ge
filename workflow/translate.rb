@@ -25,13 +25,10 @@ class Translate < Alfred::Handler::Base
   end
 end
 
+
 Alfred.with_friendly_error do |alfred|
-  #api = TranslateGe.new
   alfred.with_rescue_feedback = true
 
   puts "!!!!"
-  puts alfred.methods
+  puts Alfred.instance_methods(false)
 end
-
-#puts $0
-#puts api.methods(false)
