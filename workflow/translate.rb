@@ -19,8 +19,8 @@ Alfred.with_friendly_error do |alfred|
   res.each {|o|
     fb.add_item({
       :uid => "",
-      :title => o["Word"],
-      :subtitle => o["Text"]
+      :title => o["Word"].gsub(/\s+/, ' '),
+      :subtitle => o["Text"].gsub(/\s+/, ' ').strip
     })
   }
 
