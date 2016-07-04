@@ -7,6 +7,19 @@
 	<key>connections</key>
 	<dict>
 		<key>21557827-8003-42B7-A042-16D4C9278FEC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DB6B75C8-F256-44CC-A53C-384B99E39023</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DB6B75C8-F256-44CC-A53C-384B99E39023</key>
 		<array/>
 	</dict>
 	<key>createdby</key>
@@ -22,6 +35,8 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -29,7 +44,7 @@
 				<key>keyword</key>
 				<string>tra</string>
 				<key>queuedelaycustom</key>
-				<integer>1</integer>
+				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
@@ -40,6 +55,10 @@
 				<string>searching..</string>
 				<key>script</key>
 				<string>/usr/bin/ruby ./translate.rb {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>subtext</key>
 				<string>English &lt;=&gt; ქართული</string>
 				<key>title</key>
@@ -54,7 +73,24 @@
 			<key>uid</key>
 			<string>21557827-8003-42B7-A042-16D4C9278FEC</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>DB6B75C8-F256-44CC-A53C-384B99E39023</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -63,8 +99,17 @@
 	<dict>
 		<key>21557827-8003-42B7-A042-16D4C9278FEC</key>
 		<dict>
+			<key>xpos</key>
+			<integer>290</integer>
 			<key>ypos</key>
-			<real>250</real>
+			<integer>110</integer>
+		</dict>
+		<key>DB6B75C8-F256-44CC-A53C-384B99E39023</key>
+		<dict>
+			<key>xpos</key>
+			<integer>660</integer>
+			<key>ypos</key>
+			<integer>110</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

@@ -36,3 +36,6 @@ build/
 
 .DS_Store
 workflow/workflow
+
+workflow/bundle
+workflow/.bundle
