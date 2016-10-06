@@ -7,7 +7,7 @@ require 'uri'
 require 'json'
 
 class TranslateGe
-  @@url = "http://beta.translate.ge/"
+  @@url = "http://translate.ge/"
 
   def initialize()
     uri = URI.parse @@url
@@ -24,17 +24,11 @@ class TranslateGe
   end
 
   def search(word)
-    params = {
-      "lang" => get_lang(word),
-      "text" => word
-    }
-
-    query = params.map{|k, v| "#{k}=#{v}" }.join("&")
-    path = '/Main/Translate?' + URI.escape(query)
+    path = '/api/' + URI.escape(word)
     request = Net::HTTP::Get.new path
 
     object = JSON.parse @http.request(request).body
 
-    return object
+    return object["rows"]
   end
 end

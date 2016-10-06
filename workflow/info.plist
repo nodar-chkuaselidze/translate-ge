@@ -48,9 +48,9 @@
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
 				<integer>1</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>searching..</string>
 				<key>script</key>
@@ -81,7 +81,7 @@
 				<key>autopaste</key>
 				<false/>
 				<key>clipboardtext</key>
-				<string>{query}</string>
+				<string>{var:subtitle}</string>
 				<key>transient</key>
 				<false/>
 			</dict>

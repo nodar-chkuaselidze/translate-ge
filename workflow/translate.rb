@@ -16,7 +16,9 @@ Alfred.with_friendly_error do |alfred|
   word = ARGV[0]
 
   res = translater.search word
-  res.each {|o|
+  res.each {|v|
+    o = v["value"]
+
     fb.add_item({
       :uid => "",
       :title => o["Word"].gsub(/\s+/, ' '),
